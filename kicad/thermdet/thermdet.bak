@@ -574,7 +574,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 -12.954 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -619,7 +619,7 @@
 		(symbol "IB-AT32u4_1_1"
 			(rectangle
 				(start -5.08 11.43)
-				(end 5.08 -11.43)
+				(end 5.08 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -708,7 +708,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 7.62 10.16 180)
 				(length 2.54)
 				(name "BAT"
@@ -781,42 +781,6 @@
 				)
 			)
 			(pin bidirectional line
-				(at 7.62 -10.16 180)
-				(length 2.54)
-				(name "D3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 7.62 -7.62 180)
-				(length 2.54)
-				(name "D7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
 				(at 7.62 -5.08 180)
 				(length 2.54)
 				(name "D9"
@@ -834,7 +798,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 7.62 7.62 180)
 				(length 2.54)
 				(name "G"
@@ -852,7 +816,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 7.62 5.08 180)
 				(length 2.54)
 				(name "USB"
@@ -870,7 +834,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at -7.62 10.16 0)
 				(length 2.54)
 				(name "Vhi"

@@ -1,11 +1,5 @@
 #include <ALib0.h>
 
-/* Construction Notes:
-     Unused pins:
-      * PIN_SND_RST
-      * PIN_SND_ACTIVITY
-*/
-
 // PINS
 // avoid 0 & 1 to preserve serial communication
 // 5 is special on the ItsyBitsy (high voltage output only)
@@ -13,9 +7,7 @@
 #define PIN_LED_LEFT     A1
 #define PIN_LED_MIDDLE   A2
 #define PIN_LED_RIGHT    A3
-#define PIN_TRIGGER       3
-#define PIN_SND_RST       7
-#define PIN_SND_ACTIVITY  9
+#define PIN_TRIGGER       9
 #define PIN_SND_ARM      10
 #define PIN_SND_LOOP     11
 #define PIN_SND_DISARM   12
@@ -39,14 +31,10 @@ void setup() {
   }
 
   // set up sound
-  pinMode(PIN_SND_RST, OUTPUT);
-  digitalWrite(PIN_SND_RST, LOW);
-  pinMode(PIN_SND_ACTIVITY, INPUT_PULLUP);
   for (int pin: sndPins) {
     pinMode(pin, OUTPUT);
     digitalWrite(pin, HIGH);
   }
-  digitalWrite(PIN_SND_RST, HIGH);
 
   // set up trigger
   pinMode(PIN_TRIGGER, INPUT_PULLUP);
