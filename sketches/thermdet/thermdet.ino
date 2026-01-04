@@ -20,10 +20,6 @@ const int sndPins[] = {PIN_SND_ARM, PIN_SND_LOOP, PIN_SND_DISARM};
 boolean armed = false;
 
 void setup() {
-  // set up debugging serial port
-  Serial.begin(9600);
-  //while (!Serial) { delay(1); }
-
   // set up LEDs
   for (int pin: ledPins) {
     pinMode(pin, OUTPUT);
@@ -39,20 +35,19 @@ void setup() {
   // set up trigger
   pinMode(PIN_TRIGGER, INPUT_PULLUP);
   armed = digitalRead(PIN_TRIGGER);
-
-  Serial.println("Setup complete");
 }
 
+// watch the trigger, and set a global state variable
 void watch_trigger() {
   taskBegin();
   if (trigger.changed()) {
     armed = digitalRead(PIN_TRIGGER);
-    Serial.print("armed changed to ");
-    Serial.println(armed, HEX);
   }
   taskEnd();
 }
 
+// when armed, play 0(arm) followed by 1(loop)
+// when disarmed, play 3(disarm)
 void make_noise() {
   taskBegin();
   taskWaitFor(armed);
@@ -64,6 +59,8 @@ void make_noise() {
   taskEnd();
 }
 
+// use yellow LEDs as a digital counter
+// the counter will slowing increase in speed (to a set maximum)
 void counter() {
   static float speed = 1.0;
   static int   count = 0;
@@ -90,6 +87,8 @@ void counter() {
   taskEnd();
 }
 
+
+// the right red LED will blink slower, and forever speed up
 void warning_light() {
   static float speed = 1.0;
   taskBegin();
@@ -104,6 +103,7 @@ void warning_light() {
   taskEnd();
 }
 
+// the power light will randomly blink for a random amount of time
 void power_light() {
   taskBegin();
   if (!armed) {
