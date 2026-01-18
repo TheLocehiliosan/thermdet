@@ -2242,12 +2242,12 @@
 		(uuid "f7a32aa3-ef97-4281-9b76-9ba1bc1cb445")
 	)
 	(no_connect
-		(at 165.1 54.61)
-		(uuid "b6c87f1d-4fa4-4a6b-b6e8-b3dfbf8af941")
+		(at 102.87 113.03)
+		(uuid "9d4359a5-483a-46d7-85e5-ebc46e263b66")
 	)
 	(no_connect
-		(at 91.44 120.65)
-		(uuid "c9e2dbf2-6045-4c78-a85d-23e08f38bf07")
+		(at 165.1 54.61)
+		(uuid "b6c87f1d-4fa4-4a6b-b6e8-b3dfbf8af941")
 	)
 	(wire
 		(pts
@@ -2541,6 +2541,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 115.57) (xy 87.63 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538fa8dd-144e-4eca-b76c-be089a5dfafc")
+	)
+	(wire
+		(pts
 			(xy 74.93 100.33) (xy 74.93 91.44)
 		)
 		(stroke
@@ -2598,6 +2608,16 @@
 			(type default)
 		)
 		(uuid "838ffe45-8006-4454-97b8-cc7d9fc88ee8")
+	)
+	(wire
+		(pts
+			(xy 102.87 118.11) (xy 130.81 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84333d5d-a8d5-4f59-a175-dd62842ef768")
 	)
 	(wire
 		(pts
@@ -2681,16 +2701,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 123.19) (xy 104.14 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aa6a8f8-6261-4802-9434-b2c7c09271ab")
-	)
-	(wire
-		(pts
 			(xy 74.93 91.44) (xy 74.93 80.01)
 		)
 		(stroke
@@ -2748,16 +2758,6 @@
 			(type default)
 		)
 		(uuid "acafb658-7882-47c8-853d-8aeb3fdca5a3")
-	)
-	(wire
-		(pts
-			(xy 130.81 118.11) (xy 104.14 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3cc7e88-31f7-435f-a3ad-5f48a0df700c")
 	)
 	(wire
 		(pts
@@ -2948,6 +2948,16 @@
 			(type default)
 		)
 		(uuid "f2095d93-a65e-49ae-afc5-1dce0dab5a9b")
+	)
+	(wire
+		(pts
+			(xy 87.63 115.57) (xy 87.63 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f284ff96-4b3c-4bf3-a823-00b96efb8528")
 	)
 	(wire
 		(pts
@@ -3627,7 +3637,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 128.27 0)
+		(at 87.63 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3636,7 +3646,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d5e8628-a860-4d5f-923c-95dda29007e4")
 		(property "Reference" "#PWR03"
-			(at 104.14 134.62 0)
+			(at 87.63 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3645,7 +3655,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 133.35 0)
+			(at 87.63 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3653,7 +3663,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 128.27 0)
+			(at 87.63 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3662,7 +3672,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 128.27 0)
+			(at 87.63 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3671,7 +3681,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 128.27 0)
+			(at 87.63 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,7 +4535,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Reed_SPDT")
-		(at 96.52 120.65 0)
+		(at 95.25 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4534,7 +4544,7 @@
 		(fields_autoplaced yes)
 		(uuid "e97b496d-86ac-4b61-9218-a2fc27d56f9e")
 		(property "Reference" "SW1"
-			(at 97.2215 113.03 0)
+			(at 95.9515 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4542,7 +4552,7 @@
 			)
 		)
 		(property "Value" "SW_Reed_SPDT"
-			(at 97.2215 115.57 0)
+			(at 95.9515 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4550,7 +4560,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 120.65 0)
+			(at 95.25 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4559,7 +4569,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 120.65 0)
+			(at 95.25 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4578,7 @@
 			)
 		)
 		(property "Description" "SPDT reed switch"
-			(at 96.52 120.65 0)
+			(at 95.25 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
